@@ -1,385 +1,279 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>FlipPlay</title>
+    <title>FlipPlay — Your Entertainment Space</title>
 
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./output.css" />
 </head>
 
-
-<body>
-
-    <!-- HEADER -->
-    <header class="site-header">
-
-        <div class="container nav-container">
-
-            <a href="#home" class="logo">
+<body class="m-0 overflow-x-hidden bg-background font-['Poppins',sans-serif] text-white">
+    <!-- ==================== HEADER ==================== -->
+    <header class="sticky top-0 z-50 border-b border-primary/10 bg-background/80 py-4 backdrop-blur-[14px]">
+        <nav class="mx-auto flex w-[min(1180px,calc(100%-48px))] items-center justify-between max-md:flex-col max-md:gap-3.5 max-sm:w-[calc(100%-28px)]"
+            aria-label="Main navigation">
+            <a href="#home" class="text-[23px] font-semibold text-white no-underline">
                 FlipPlay
             </a>
 
-            <nav aria-label="Main navigation">
+            <ul class="m-0 flex list-none gap-7 p-0 max-md:gap-4.5 max-sm:gap-3.5">
+                <li>
+                    <a href="#home"
+                        class="text-[13px] text-white/65 no-underline transition-colors duration-200 hover:text-accent">
+                        Home
+                    </a>
+                </li>
 
-                <ul class="nav-menu">
+                <li>
+                    <a href="#explore"
+                        class="text-[13px] text-white/65 no-underline transition-colors duration-200 hover:text-accent">
+                        Explore
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="#home" class="nav-link">
-                            Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#explore" class="nav-link">
-                            Explore
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#contact" class="nav-link">
-                            Contact
-                        </a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
-        </div>
-
+                <li>
+                    <a href="#contact"
+                        class="text-[13px] text-white/65 no-underline transition-colors duration-200 hover:text-accent">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-
     <main>
-
-        <!-- HERO -->
-        <section id="home" class="section section-dark hero">
-
-            <div class="container">
-
-                <div class="hero-content">
-
-                    <p class="section-label">
+        <!-- ==================== HERO ==================== -->
+        <section id="home"
+            class="relative flex min-h-167.5 items-center overflow-hidden bg-background py-25 bg-[radial-gradient(circle_at_15%_50%,rgba(0,115,66,0.35),transparent_30%),radial-gradient(circle_at_85%_20%,rgba(43,255,248,0.1),transparent_25%)] max-md:min-h-145 max-md:py-18.75">
+            <div class="mx-auto w-[min(1180px,calc(100%-48px))] max-sm:w-[calc(100%-28px)]">
+                <div class="mx-auto max-w-212.5 text-center">
+                    <p class="mb-3 text-[11px] tracking-[3px] text-accent">
                         YOUR ENTERTAINMENT SPACE
                     </p>
 
-                    <h1 class="hero-title">
-                        Find somethingworth your time.
+                    <h1
+                        class="mb-6.25 text-[clamp(42px,7vw,78px)] font-medium leading-[1.02] tracking-[-3px] text-white max-sm:text-[36px] max-sm:tracking-[-1.5px]">
+                        Find something worth your time.
                     </h1>
 
-                    <p class="hero-description">
-                        Explore stories, games, music, and entertainment from different worlds. Pick a mood, discoversomething new, and enjoy the experience.
+                    <p class="mx-auto mb-8 max-w-155 text-[13px] leading-[1.8] text-white/60">
+                        Discover something new and enjoy different forms of entertainment
+                        in one place.
                     </p>
 
-                    <a href="#explore" class="button">
+                    <a href="#explore"
+                        class="inline-flex items-center gap-2 rounded-full bg-primary px-5.75 py-3.25 text-[13px] font-semibold text-background no-underline transition-colors duration-200 hover:bg-accent">
                         Explore Now
-                        <span>↗</span>
+                        <span aria-hidden="true">↗</span>
                     </a>
-
                 </div>
-
             </div>
-
         </section>
 
+        <!-- ==================== EXPLORE ==================== -->
+        <section id="explore"
+            class="relative overflow-hidden bg-linear-to-br from-[#003522] via-[#00613C] to-[#003B27] py-25 max-md:py-18.75">
+            <!-- Background grid -->
+            <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(176,252,206,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(176,252,206,0.06)_1px,transparent_1px)] bg-size-[55px_55px]"
+                aria-hidden="true"></div>
 
-        <!-- EXPLORE -->
-        <section id="explore" class="section section-green">
+            <div class="relative z-10 mx-auto w-[min(1180px,calc(100%-48px))] max-sm:w-[calc(100%-28px)]">
+                <header class="relative z-10 mb-11.25">
+                    <p class="mb-3 text-[11px] tracking-[3px] text-accent">EXPLORE</p>
 
-            <div class="container">
-
-                <header class="section-header">
-
-                    <p class="section-label">
-                        EXPLORE
-                    </p>
-
-                    <h2 class="section-title">
+                    <h2 class="m-0 text-[clamp(30px,4vw,48px)] font-medium leading-[1.1]">
                         Something for every mood.
                     </h2>
 
-                    <p class="section-description">
-                        From illustrated stories to movies, games,
-                        and music, discover different forms of
-                        entertainment in one place.
+                    <p class="mt-3.75 max-w-150 text-[13px] leading-[1.8] text-white/55">
+                        From illustrated stories to movies, games, and music, discover
+                        different forms of entertainment in one place.
                     </p>
-
                 </header>
 
-                <div id="card-grid" class="card-grid"></div>
-
+                <!-- Cards are generated from script.js -->
+                <div id="card-grid"
+                    class="relative z-10 grid grid-cols-4 gap-4.5 max-[1024px]:grid-cols-2 max-md:grid-cols-1"></div>
             </div>
-
         </section>
 
-        <!-- CONTACT -->
-
-        <section id="contact" class="section section-dark">
-
-            <div class="container contact-container">
-
+        <!-- ==================== CONTACT ==================== -->
+        <section id="contact"
+            class="relative overflow-hidden bg-background py-25 bg-[radial-gradient(circle_at_15%_50%,rgba(0,115,66,0.35),transparent_30%),radial-gradient(circle_at_85%_20%,rgba(43,255,248,0.1),transparent_25%)] max-md:py-18.75">
+            <div
+                class="relative z-10 mx-auto grid w-[min(1180px,calc(100%-48px))] grid-cols-[0.8fr_1.2fr] items-center gap-17.5 max-[1024px]:grid-cols-1 max-[1024px]:gap-11.25 max-sm:w-[calc(100%-28px)]">
                 <!-- Contact Information -->
-                <div class="contact-info">
+                <div>
+                    <p class="mb-3 text-[11px] tracking-[3px] text-accent">CONTACT</p>
 
-                    <p class="section-label">
-                        CONTACT INFO
+                    <h2 class="mb-3 text-[28px] font-medium">Let's connect.</h2>
+
+                    <p class="mb-7.5 max-w-82.5 text-[12px] leading-[1.8] text-white/70">
+                        Have a question, suggestion, or just want to say hello? Feel free
+                        to reach out.
                     </p>
 
-                    <h2 class="contact-info-title">
-                        Let's connect.
-                    </h2>
-
-                    <p class="contact-info-description">
-                        Have a recommendation, question, or something you would like to share? Feel free to reach out.
-                    </p>
-
-
-                    <ul class="contact-list">
-
-                        <li class="contact-item">
-
-                            <span class="contact-icon">
-                                ✉
+                    <ul class="m-0 flex list-none flex-col gap-5.5 p-0">
+                        <!-- Email -->
+                        <li class="flex items-start gap-3.5">
+                            <span
+                                class="grid h-10 w-10 shrink-0 place-items-center rounded-[11px] border border-white/15 bg-white/8 text-primary"
+                                aria-hidden="true">
+                                @
                             </span>
 
-                            <div class="contact-item-content">
-
-                                <span class="contact-item-label">
+                            <div class="flex flex-col gap-0.75">
+                                <span class="text-[9px] uppercase tracking-[1.5px] text-white/55">
                                     Email
                                 </span>
 
-                                <a
-                                    href="mailto:hello@flipplay.com"
-                                    class="contact-item-value"
-                                >
+                                <a href="mailto:hello@flipplay.com"
+                                    class="text-[11px] leading-normal text-white/90 no-underline transition-colors hover:text-primary">
                                     hello@flipplay.com
                                 </a>
-
                             </div>
-
                         </li>
 
-
-                        <li class="contact-item">
-
-                            <span class="contact-icon">
+                        <!-- Phone -->
+                        <li class="flex items-start gap-3.5">
+                            <span
+                                class="grid h-10 w-10 shrink-0 place-items-center rounded-[11px] border border-white/15 bg-white/8 text-primary"
+                                aria-hidden="true">
                                 ☎
                             </span>
 
-                            <div class="contact-item-content">
-
-                                <span class="contact-item-label">
+                            <div class="flex flex-col gap-0.75">
+                                <span class="text-[9px] uppercase tracking-[1.5px] text-white/55">
                                     Phone
                                 </span>
 
-                                <span class="contact-item-value">
+                                <a href="tel:+15048098221"
+                                    class="text-[11px] leading-normal text-white/90 no-underline transition-colors hover:text-primary">
                                     +1 504-809-8221
-                                </span>
+                                </a>
 
-                                <span class="contact-item-value">
+                                <a href="tel:+15047495456"
+                                    class="text-[11px] leading-normal text-white/90 no-underline transition-colors hover:text-primary">
                                     +1 504-749-5456
-                                </span>
-
+                                </a>
                             </div>
-
                         </li>
 
-
-                        <li class="contact-item">
-
-                            <span class="contact-icon">
+                        <!-- Location -->
+                        <li class="flex items-start gap-3.5">
+                            <span
+                                class="grid h-10 w-10 shrink-0 place-items-center rounded-[11px] border border-white/15 bg-white/8 text-primary"
+                                aria-hidden="true">
                                 ⌖
                             </span>
 
-                            <div class="contact-item-content">
-
-                                <span class="contact-item-label">
+                            <div class="flex flex-col gap-0.75">
+                                <span class="text-[9px] uppercase tracking-[1.5px] text-white/55">
                                     Location
                                 </span>
 
-                                <span class="contact-item-value">
-                                    22 Baker Street, Texas<br>
-                                    United States<br>
-                                    WIU 3BW
+                                <span class="text-[11px] leading-normal text-white/90">
+                                    22 Baker Street, Texas
                                 </span>
 
+                                <span class="text-[11px] leading-normal text-white/90">
+                                    United States / WIU 3BW
+                                </span>
                             </div>
-
                         </li>
-
                     </ul>
 
-
-                    <div class="social-section">
-
-                        <p class="social-title">
-                            Social Info
+                    <!-- Social Media -->
+                    <div class="mt-8.75">
+                        <p class="mb-3 text-[9px] uppercase tracking-[1.5px] text-white/55">
+                            Social
                         </p>
 
-                        <div class="social-list">
+                        <ul class="m-0 flex list-none gap-2.25 p-0">
+                            <li>
+                                <a href="#" aria-label="Instagram"
+                                    class="grid h-9.5 w-9.5 place-items-center rounded-full border border-white/15 bg-white/8 text-[12px] text-white no-underline transition-colors hover:bg-primary/15 hover:text-primary">
+                                    IG
+                                </a>
+                            </li>
 
-                            <a
-                                href="#"
-                                class="social-link"
-                                aria-label="Instagram"
-                            >
-                                ◉
-                            </a>
+                            <li>
+                                <a href="#" aria-label="Twitter"
+                                    class="grid h-9.5 w-9.5 place-items-center rounded-full border border-white/15 bg-white/8 text-[12px] text-white no-underline transition-colors hover:bg-primary/15 hover:text-primary">
+                                    X
+                                </a>
+                            </li>
 
-                            <a
-                                href="#"
-                                class="social-link"
-                                aria-label="X"
-                            >
-                                𝕏
-                            </a>
-
-                            <a
-                                href="#"
-                                class="social-link"
-                                aria-label="Website"
-                            >
-                                ◎
-                            </a>
-
-                        </div>
-
+                            <li>
+                                <a href="#" aria-label="GitHub"
+                                    class="grid h-9.5 w-9.5 place-items-center rounded-full border border-white/15 bg-white/8 text-[12px] text-white no-underline transition-colors hover:bg-primary/15 hover:text-primary">
+                                    GH
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-
                 </div>
-
 
                 <!-- Contact Form -->
                 <form
-                    class="contact-form"
-                    action="#"
-                    method="post"
-                >
-
-                    <h2 class="contact-form-title">
-                        Let's work <span>together.</span>
+                    class="rounded-[22px] border border-white/20 bg-white/9 p-8.75 backdrop-blur-lg max-md:p-7 max-sm:px-5.5">
+                    <h2 class="mb-6.25 text-[clamp(28px,4vw,40px)] font-medium">
+                        Send us a <span class="text-accent">message.</span>
                     </h2>
 
-
-                    <div class="form-group">
-
-                        <label
-                            for="name"
-                            class="form-label"
-                        >
+                    <div class="mb-4.5">
+                        <label for="name" class="mb-1.75 block text-[10px] text-white/80">
                             Name
                         </label>
 
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            class="form-input"
-                            placeholder="Your name"
-                            required
-                        >
-
+                        <input id="name" name="name" type="text" placeholder="Your name"
+                            class="w-full rounded-[9px] border border-white/15 bg-[#002317]/22 px-3.25 py-3.25 text-[11px] text-white outline-none placeholder:text-white/40 focus:border-accent/50" />
                     </div>
 
-
-                    <div class="form-group">
-
-                        <label
-                            for="email"
-                            class="form-label"
-                        >
+                    <div class="mb-4.5">
+                        <label for="email" class="mb-1.75 block text-[10px] text-white/80">
                             Email
                         </label>
 
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            class="form-input"
-                            placeholder="you@example.com"
-                            required
-                        >
-
+                        <input id="email" name="email" type="email" placeholder="your@email.com"
+                            class="w-full rounded-[9px] border border-white/15 bg-[#002317]/22 px-3.25 py-3.25 text-[11px] text-white outline-none placeholder:text-white/40 focus:border-accent/50" />
                     </div>
 
-
-                    <div class="form-group">
-
-                        <label
-                            for="subject"
-                            class="form-label"
-                        >
-                            Subject
-                        </label>
-
-                        <input
-                            type="text"
-                            id="subject"
-                            name="subject"
-                            class="form-input"
-                            placeholder="What would you like to talk about?"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label
-                            for="message"
-                            class="form-label"
-                        >
+                    <div class="mb-4.5">
+                        <label for="message" class="mb-1.75 block text-[10px] text-white/80">
                             Message
                         </label>
 
-                        <textarea
-                            id="message"
-                            name="message"
-                            class="form-textarea"
-                            placeholder="Tell us what's on your mind..."
-                            required
-                        ></textarea>
-
+                        <textarea id="message" name="message" placeholder="Write your message..."
+                            class="min-h-31.25 w-full resize-y rounded-[9px] border border-white/15 bg-[#002317]/22 px-3.25 py-3.25 text-[11px] text-white outline-none placeholder:text-white/40 focus:border-accent/50"></textarea>
                     </div>
 
-
-                    <button type="submit" class="button">
+                    <button type="submit"
+                        class="inline-flex cursor-pointer items-center gap-2 rounded-full bg-primary px-5.75 py-3.25 text-[13px] font-semibold text-background transition-colors duration-200 hover:bg-accent">
                         Send Message
-                        <span>↗</span>
+                        <span aria-hidden="true">↗</span>
                     </button>
-
                 </form>
-
             </div>
-
         </section>
+    </main>
 
-        </main>
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="border-t border-primary/10 bg-background px-0 py-10 text-center">
+        <div class="mx-auto w-[min(1180px,calc(100%-48px))] max-sm:w-[calc(100%-28px)]">
+            <p class="m-0 text-[23px] font-semibold text-white">FlipPlay</p>
 
-    <!-- FOOTER -->
+            <p class="mt-2 text-[11px] text-white/40">
+                Your space to discover something worth your time.
+            </p>
+        </div>
+    </footer>
 
-        <footer class="site-footer">
-
-            <div class="container">
-
-                <a href="#home" class="logo">
-                    FlipPlay
-                </a>
-
-                <p class="footer-description">
-                    Entertainment for every mood, all in one place.
-                </p>
-
-            </div>
-
-        </footer>
-
-        <script src="./script.js"></script>
-
-    </body>
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script src="./script.js"></script>
+</body>
 
 </html>
