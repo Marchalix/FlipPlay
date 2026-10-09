@@ -1,38 +1,47 @@
 # FlipPlay
 
-FlipPlay is a responsive digital entertainment landing page built using HTML and Tailwind CSS.
+FlipPlay is a modern entertainment website for discovering different forms of entertainment in one place.
 
 ## About
 
-FlipPlay is designed as a simple digital entertainment platform concept that brings different types of entertainment content into one place, such as anime, drama, manga, and light novels.
+FlipPlay provides a simple and interactive space to explore:
 
-This project was created as part of a Tailwind CSS web development task.
+- Anime
+- Drama
+- Manga
+- Light Novel
+- Movies
+- Series
+- Games
+- Songs
+
+The website uses a data-driven approach to dynamically generate entertainment cards, making the content easier to maintain and update.
 
 ## Features
 
-- Responsive navigation bar
-- Hero section
-- Entertainment content section
+- Responsive entertainment website
+- Dynamic media cards using JavaScript
+- Glassmorphism-inspired interface
+- Interactive hover effects
+- Responsive grid layout
 - Contact form
-- Footer
-- Responsive layout for mobile, tablet, and desktop
+- Modern dark green visual design
 
 ## Technologies
 
-- HTML5
+- HTML
+- CSS
 - Tailwind CSS
-- Node.js
-- Tailwind CSS CLI
+- JavaScript
 
 ## Project Structure
 
 ```text
-flipplay/
+FlipPlay/
 ├── src/
 │   ├── index.html
 │   ├── main.css
-│   └── output.css
-├── .gitignore
+│   ├── output.css
+│   └── script.js
 ├── package.json
-├── package-lock.json
 └── README.md

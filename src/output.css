@@ -179,6 +179,9 @@
       max-width: 96rem;
     }
   }
+  .grid {
+    display: grid;
+  }
 }
 * {
   box-sizing: border-box;
