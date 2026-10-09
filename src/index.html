@@ -1,285 +1,385 @@
-<body class="bg-black text-white">
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- Navbar -->
-    <header class="bg-[#371E1E] px-6 py-4">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <nav class="max-w-6xl mx-auto flex items-center justify-between">
+    <title>FlipPlay</title>
 
-            <!-- Logo -->
-            <h1 class="text-2xl font-bold">
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">
                 FlipPlay
-            </h1>
+            </a>
 
-            <!-- Navigation -->
-            <ul class="flex gap-6">
-                <li>
-                    <a href="#" class="hover:text-[#B7B4AE]">
-                        Home
-                    </a>
-                </li>
+            <nav aria-label="Main navigation">
 
-                <li>
-                    <a href="#about" class="hover:text-[#B7B4AE]">
-                        About
-                    </a>
-                </li>
+                <ul class="nav-menu">
 
-                <li>
-                    <a href="#content" class="hover:text-[#B7B4AE]">
-                        Explore
-                    </a>
-                </li>
+                    <li>
+                        <a href="#home" class="nav-link">
+                            Home
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#contact" class="hover:text-[#B7B4AE]">
-                        Contact
-                    </a>
-                </li>
-            </ul>
+                    <li>
+                        <a href="#explore" class="nav-link">
+                            Explore
+                        </a>
+                    </li>
 
-        </nav>
+                    <li>
+                        <a href="#contact" class="nav-link">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
 
     </header>
 
-    <!-- Hero Section -->
-    <section class="bg-[#0A0A0A] px-6 py-20">
 
-        <div class="max-w-6xl mx-auto text-center">
+    <main>
 
-            <p class="text-[#726E68] font-semibold mb-3">
-                DIGITAL ENTERTAINMENT PLATFORM
-            </p>
+        <!-- HERO -->
+        <section id="home" class="section section-dark hero">
 
-            <h2 class="text-4xl md:text-6xl font-bold text-[#B7B4AE] mb-6">
-                Entertainment,
-                <br>
-                All in One Place.
-            </h2>
+            <div class="container">
 
-            <p class="max-w-2xl mx-auto text-white/80 leading-relaxed mb-8">
-                Discover anime, drama, manga, and light novels
-                through one integrated digital entertainment platform.
-            </p>
+                <div class="hero-content">
 
-            <a
-                href="#content"
-                class="inline-block bg-[#33312F] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#726E68]"
-            >
-                Explore FlipPlay
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- Content Section -->
-    <section id="content" class="bg-[#0A0A0A] px-6 py-16">
-
-        <div class="max-w-6xl mx-auto">
-
-            <!-- Section Heading -->
-            <div class="text-center mb-10">
-
-                <p class="text-[#726E68] font-semibold mb-2">
-                    EXPLORE CONTENT
-                </p>
-
-                <h2 class="text-3xl md:text-4xl font-bold text-[#B7B4AE]">
-                    Find Your Entertainment
-                </h2>
-
-                <p class="text-white/70 mt-4 max-w-2xl mx-auto">
-                    Explore different types of entertainment and find something
-                    that matches your mood.
-                </p>
-
-            </div>
-
-            <!-- Content Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-
-                <!-- Anime -->
-                <div class="bg-[#33312F] rounded-xl p-6">
-                    <div class="text-4xl mb-4">
-                        🎬
-                    </div>
-
-                    <h3 class="text-xl font-bold text-white mb-2">
-                        Anime
-                    </h3>
-
-                    <p class="text-white/70 leading-relaxed">
-                        Discover exciting anime series and stories
-                        from different genres.
+                    <p class="section-label">
+                        YOUR ENTERTAINMENT SPACE
                     </p>
-                </div>
 
-                <!-- Drama -->
-                <div class="bg-[#33312F] rounded-xl p-6">
-                    <div class="text-4xl mb-4">
-                        📺
-                    </div>
+                    <h1 class="hero-title">
+                        Find somethingworth your time.
+                    </h1>
 
-                    <h3 class="text-xl font-bold text-white mb-2">
-                        Drama
-                    </h3>
-
-                    <p class="text-white/70 leading-relaxed">
-                        Find drama series with interesting characters,
-                        stories, and unforgettable moments.
+                    <p class="hero-description">
+                        Explore stories, games, music, and entertainment from different worlds. Pick a mood, discoversomething new, and enjoy the experience.
                     </p>
-                </div>
 
-                <!-- Manga -->
-                <div class="bg-[#33312F] rounded-xl p-6">
-                    <div class="text-4xl mb-4">
-                        📖
-                    </div>
+                    <a href="#explore" class="button">
+                        Explore Now
+                        <span>↗</span>
+                    </a>
 
-                    <h3 class="text-xl font-bold text-white mb-2">
-                        Manga
-                    </h3>
-
-                    <p class="text-white/70 leading-relaxed">
-                        Read engaging manga stories and explore
-                        new worlds through illustrations.
-                    </p>
-                </div>
-
-                <!-- Light Novel -->
-                <div class="bg-[#33312F] rounded-xl p-6">
-                    <div class="text-4xl mb-4">
-                        📚
-                    </div>
-
-                    <h3 class="text-xl font-bold text-white mb-2">
-                        Light Novel
-                    </h3>
-
-                    <p class="text-white/70 leading-relaxed">
-                        Dive into detailed stories and imaginative
-                        worlds through light novels.
-                    </p>
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="bg-[#0A0A0A] px-6 py-16">
+        <!-- EXPLORE -->
+        <section id="explore" class="section section-green">
 
-        <div class="max-w-2xl mx-auto">
+            <div class="container">
 
-            <!-- Section Heading -->
-            <div class="text-center mb-10">
+                <header class="section-header">
 
-                <p class="text-[#726E68] font-semibold mb-2">
-                    GET IN TOUCH
-                </p>
+                    <p class="section-label">
+                        EXPLORE
+                    </p>
 
-                <h2 class="text-3xl md:text-4xl font-bold text-[#B7B4AE]">
-                    Contact Us
-                </h2>
+                    <h2 class="section-title">
+                        Something for every mood.
+                    </h2>
 
-                <p class="text-white/70 mt-4">
-                    Have a question or suggestion? Send us a message.
-                </p>
+                    <p class="section-description">
+                        From illustrated stories to movies, games,
+                        and music, discover different forms of
+                        entertainment in one place.
+                    </p>
+
+                </header>
+
+                <div id="card-grid" class="card-grid"></div>
 
             </div>
 
-            <!-- Contact Form -->
-            <form class="bg-[#33312F] rounded-xl p-6 md:p-8">
+        </section>
 
-                <!-- Name -->
-                <div class="mb-5">
-                    <label
-                        for="name"
-                        class="block text-white font-semibold mb-2"
-                    >
-                        Name
-                    </label>
+        <!-- CONTACT -->
 
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Enter your name"
-                        class="w-full bg-white text-black px-4 py-3 rounded-lg outline-none"
-                    >
+        <section id="contact" class="section section-dark">
+
+            <div class="container contact-container">
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+
+                    <p class="section-label">
+                        CONTACT INFO
+                    </p>
+
+                    <h2 class="contact-info-title">
+                        Let's connect.
+                    </h2>
+
+                    <p class="contact-info-description">
+                        Have a recommendation, question, or something you would like to share? Feel free to reach out.
+                    </p>
+
+
+                    <ul class="contact-list">
+
+                        <li class="contact-item">
+
+                            <span class="contact-icon">
+                                ✉
+                            </span>
+
+                            <div class="contact-item-content">
+
+                                <span class="contact-item-label">
+                                    Email
+                                </span>
+
+                                <a
+                                    href="mailto:hello@flipplay.com"
+                                    class="contact-item-value"
+                                >
+                                    hello@flipplay.com
+                                </a>
+
+                            </div>
+
+                        </li>
+
+
+                        <li class="contact-item">
+
+                            <span class="contact-icon">
+                                ☎
+                            </span>
+
+                            <div class="contact-item-content">
+
+                                <span class="contact-item-label">
+                                    Phone
+                                </span>
+
+                                <span class="contact-item-value">
+                                    +1 504-809-8221
+                                </span>
+
+                                <span class="contact-item-value">
+                                    +1 504-749-5456
+                                </span>
+
+                            </div>
+
+                        </li>
+
+
+                        <li class="contact-item">
+
+                            <span class="contact-icon">
+                                ⌖
+                            </span>
+
+                            <div class="contact-item-content">
+
+                                <span class="contact-item-label">
+                                    Location
+                                </span>
+
+                                <span class="contact-item-value">
+                                    22 Baker Street, Texas<br>
+                                    United States<br>
+                                    WIU 3BW
+                                </span>
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+
+                    <div class="social-section">
+
+                        <p class="social-title">
+                            Social Info
+                        </p>
+
+                        <div class="social-list">
+
+                            <a
+                                href="#"
+                                class="social-link"
+                                aria-label="Instagram"
+                            >
+                                ◉
+                            </a>
+
+                            <a
+                                href="#"
+                                class="social-link"
+                                aria-label="X"
+                            >
+                                𝕏
+                            </a>
+
+                            <a
+                                href="#"
+                                class="social-link"
+                                aria-label="Website"
+                            >
+                                ◎
+                            </a>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <!-- Email -->
-                <div class="mb-5">
-                    <label
-                        for="email"
-                        class="block text-white font-semibold mb-2"
-                    >
-                        Email
-                    </label>
 
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email"
-                        class="w-full bg-white text-black px-4 py-3 rounded-lg outline-none"
-                    >
-                </div>
-
-                <!-- Message -->
-                <div class="mb-6">
-                    <label
-                        for="message"
-                        class="block text-white font-semibold mb-2"
-                    >
-                        Message
-                    </label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="5"
-                        placeholder="Write your message..."
-                        class="w-full bg-white text-black px-4 py-3 rounded-lg outline-none resize-none"
-                    ></textarea>
-                </div>
-
-                <!-- Submit Button -->
-                <button
-                    type="submit"
-                    class="w-full bg-[#371E1E] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#726E68]"
+                <!-- Contact Form -->
+                <form
+                    class="contact-form"
+                    action="#"
+                    method="post"
                 >
-                    Send Message
-                </button>
 
-            </form>
+                    <h2 class="contact-form-title">
+                        Let's work <span>together.</span>
+                    </h2>
 
-        </div>
 
-    </section>
+                    <div class="form-group">
 
-    <!-- Footer -->
-    <footer class="bg-[#371E1E] text-white px-6 py-6">
+                        <label
+                            for="name"
+                            class="form-label"
+                        >
+                            Name
+                        </label>
 
-        <div class="max-w-6xl mx-auto text-center">
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            class="form-input"
+                            placeholder="Your name"
+                            required
+                        >
 
-            <h2 class="text-xl font-bold mb-2">
-                FlipPlay
-            </h2>
+                    </div>
 
-            <p class="text-white/70 text-sm">
-                Your entertainment, all in one place.
-            </p>
 
-            <p class="text-white/50 text-sm mt-4">
-                © 2026 FlipPlay. All rights reserved.
-            </p>
+                    <div class="form-group">
 
-        </div>
+                        <label
+                            for="email"
+                            class="form-label"
+                        >
+                            Email
+                        </label>
 
-    </footer>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="form-input"
+                            placeholder="you@example.com"
+                            required
+                        >
 
-</body>
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label
+                            for="subject"
+                            class="form-label"
+                        >
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            class="form-input"
+                            placeholder="What would you like to talk about?"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label
+                            for="message"
+                            class="form-label"
+                        >
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            class="form-textarea"
+                            placeholder="Tell us what's on your mind..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="button">
+                        Send Message
+                        <span>↗</span>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        </main>
+
+    <!-- FOOTER -->
+
+        <footer class="site-footer">
+
+            <div class="container">
+
+                <a href="#home" class="logo">
+                    FlipPlay
+                </a>
+
+                <p class="footer-description">
+                    Entertainment for every mood, all in one place.
+                </p>
+
+            </div>
+
+        </footer>
+
+        <script src="./script.js"></script>
+
+    </body>
+
+</html>
