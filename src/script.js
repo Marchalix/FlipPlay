@@ -65,82 +65,63 @@ const mediaData = [
     }
 ];
 
-
 const cardGrid = document.getElementById("card-grid");
-
 
 const cardBaseClasses =
     "group relative h-[280px] overflow-hidden rounded-[20px] border border-white/15 bg-white/[0.07] isolate backdrop-blur-[16px] transition-transform duration-300 hover:-translate-y-1.5 hover:border-primary/40";
 
-
 const cardImageClasses =
     "absolute inset-0 z-[-2] h-full w-full object-cover object-top transition-transform duration-400 group-hover:scale-105";
-
 
 const cardOverlayClasses =
     "absolute inset-0 z-[-1] bg-[linear-gradient(to_bottom,rgba(6,11,10,0.05)_20%,rgba(6,11,10,0.45)_55%,#060B0A_100%)]";
 
-
-const cardContentClasses =
-    "flex h-full flex-col justify-end p-[22px]";
-
+const cardContentClasses = "flex h-full flex-col justify-end p-[22px]";
 
 const badgeClasses =
     "absolute left-[18px] top-[18px] rounded-full border border-primary/20 bg-background/50 px-[9px] py-[5px] text-[8px] uppercase tracking-[1px] text-primary";
 
-
-const cardTitleClasses =
-    "m-0 mb-1.5 text-[20px] font-medium";
-
+const cardTitleClasses = "m-0 mb-1.5 text-[20px] font-medium";
 
 const cardDescriptionClasses =
     "m-0 max-w-[430px] pr-[35px] text-[10px] leading-[1.6] text-white/60";
 
-
 const cardArrowClasses =
     "absolute bottom-5 right-5 grid h-9 w-9 place-items-center rounded-full border border-primary/20 bg-primary/10 text-primary opacity-0 transition-opacity duration-300 group-hover:opacity-100";
 
+//render data to card
+//template
+//arraylist : map
+cardGrid.innerHTML = mediaData.map((media) => {
+    const cardContent = `
+        <img
+            src="${media.image}"
+            alt="${media.title} entertainment"
+            class="${cardImageClasses}"
+        >
 
-cardGrid.innerHTML = mediaData
-    .map(
-        (media) => `
-            <article class="${cardBaseClasses}">
+        <div class="${cardOverlayClasses}" aria-hidden="true"></div>
 
-                <img
-                    src="${media.image}"
-                    alt="${media.title} entertainment"
-                    class="${cardImageClasses}"
-                >
+        <div class="${cardContentClasses}">
+            <span class="${badgeClasses}">${media.badge}</span>
+            <h3 class="${cardTitleClasses}">${media.title}</h3>
+            <p class="${cardDescriptionClasses}">${media.description}</p>
 
-                <div
-                    class="${cardOverlayClasses}"
-                    aria-hidden="true"
-                ></div>
+            <span class="${cardArrowClasses}" aria-hidden="true">↗</span>
+        </div>
+    `;
 
-                <div class="${cardContentClasses}">
+    if (media.title === "Anime") {
+        return `
+            <a href="anime/index.html" class="${cardBaseClasses}">
+                ${cardContent}
+            </a>
+        `;
+    }
 
-                    <span class="${badgeClasses}">
-                        ${media.badge}
-                    </span>
-
-                    <h3 class="${cardTitleClasses}">
-                        ${media.title}
-                    </h3>
-
-                    <p class="${cardDescriptionClasses}">
-                        ${media.description}
-                    </p>
-
-                    <span
-                        class="${cardArrowClasses}"
-                        aria-hidden="true"
-                    >
-                        ↗
-                    </span>
-
-                </div>
-
-            </article>
-        `
-    )
-    .join("");
+    return `
+        <article class="${cardBaseClasses}">
+            ${cardContent}
+        </article>
+    `;
+}).join("");
